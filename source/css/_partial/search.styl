@@ -1,0 +1,130 @@
+header.scrolled .js-toggle-search
+    position: absolute
+    top: 33px
+    -webkit-transform: translateY(-15px)
+    transform: translateY(-15px)
+    -webkit-transition: all 500ms ease-in-out
+    transition: all 500ms ease-in-out
+
+ .js-toggle-search{
+	font-size: 20px;
+    position: relative;
+    color: #BBB;
+    z-index: 4;
+    position: absolute;
+    top: 37px;
+    right: 90px;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.js-toggle-search:hover {
+    cursor: pointer;
+    color: #666;
+}
+
+.search-form--modal {
+    -webkit-transition: visibility 0.25s ease, opacity 0.25s ease;
+    -moz-transition: visibility 0.25s ease, opacity 0.25s ease;
+    -ms-transition: visibility 0.25s ease, opacity 0.25s ease;
+    -o-transition: visibility 0.25s ease, opacity 0.25s ease;
+    transition: visibility 0.25s ease, opacity 0.25s ease;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0
+}
+
+.search-form--modal .search-form__inner {
+    max-width: 640px;
+    padding: 0 20px;
+    margin: auto;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 85px;
+    top: 0;
+    bottom: 0
+}
+
+.search-form.is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.search-form div {
+    position: relative
+}
+
+.search-form div i {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1;
+    color: #ddd;
+    position: absolute;
+    bottom: 12px;
+    margin-top: -16px;
+    left: 16px
+}
+
+.search-form input {
+    font-size: 24px;
+    font-size: 1.5rem;
+    background: #f5f5f5;
+    padding: 12px 24px 12px 64px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.search-form input::-webkit-input-placeholder {
+    color: #ddd
+}
+
+.search-form input:-moz-placeholder {
+    color: #ddd
+}
+
+.search-form input::-moz-placeholder {
+    color: #ddd
+}
+
+.search-form input:-ms-input-placeholder {
+    color: #ddd
+}
+
+.text-input {
+    font-size: 14px;
+    font-size: 0.875rem;
+    background: #f1f2f2;
+    border: 1px solid #eee;
+    color: #666;
+    border-radius: 3px;
+    padding: 10px 12px
+}
+
+.text-input:focus {
+    background: #fff;
+    color: #5b5e5f;
+    border-color: #4f94cb;
+    outline: none;
+    box-shadow: 0 0 3px rgba(95, 140, 196, 0.25)
+}
+
+.text-input:disabled {
+    color: #aaa
+}
+
+.text-input--small {
+    padding: 8px 12px
+}

@@ -1,0 +1,137 @@
+#nav-toggle {
+    padding: 15px 35px 16px 0;
+    z-index: 10;
+    display: block;
+    top: 35px;
+    right: 2em;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    position: absolute
+}
+
+#nav-toggle span,
+#nav-toggle span:after,
+#nav-toggle span:before {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    height: 1px;
+    width: 25px;
+    background: #BBB;
+    position: absolute;
+    display: block;
+    content: '';
+    border-radius: 2px;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out
+}
+
+#nav-toggle span {
+    left: 4px
+}
+
+#nav-toggle span:before {
+    top: -8px
+}
+
+#nav-toggle span:after {
+    bottom: -8px;
+    width: 15px
+}
+
+#nav-toggle:hover span,
+#nav-toggle:hover span:after,
+#nav-toggle:hover span:before {
+    background: #999
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+    background: #333
+}
+
+#nav-toggle.active span:after,
+#nav-toggle.active span:before {
+    top: 0;
+    background: #fff
+}
+
+#nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#nav-toggle.active span:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 25px
+}
+
+nav {
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background: #333;
+    right: -300px;
+    z-index: 9;
+    padding: 6em 0 0;
+    box-sizing: border-box
+}
+
+nav li {
+    list-style: none
+}
+
+nav a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 1.5em;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav.open {
+    right: 0;
+}
+
+nav ul li.current-menu-item a:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 50px;
+    margin-top: 9px;
+    background: #8CC9AD;
+    border-radius: 50%;
+}
+
+nav ul li.current-menu-item>a {
+    color: #8CC9AD
+}
+
+nav .menu{
+	padding: 0px 50px;
+}
+
+nav .menu li{
+	list-style: none;
+}
+
+nav a{
+	display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 1.5em;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}

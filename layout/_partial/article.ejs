@@ -1,0 +1,27 @@
+<!--文章-->
+<article>
+	<%- partial('_widget/title',{post: post,index: false,class_name: 'post-title'})%>
+	<div class='post-body mb'>
+		<%- post.content %>
+	</div>
+	<div class="meta split">
+		<%- partial('_widget/date',{post: post,class_name: 'post-date',date_format: null})%>
+	</div>
+</article>
+
+<!--评论-->
+<%if(theme.comments.duoshuo_username){%>
+	<%- partial('post/duoshuo-comment',
+	{
+	    key: post.slug,
+	    title: post.title,
+	    url: config.url+url_for(post.path)
+	}) %>
+<%} else if(theme.comments.disqus_username){%>
+	<%- partial('post/disqus-comment',
+	{
+	    key: post.slug,
+	    title: post.title,
+	    url: config.url+url_for(post.path)
+	}) %>
+<%}%>

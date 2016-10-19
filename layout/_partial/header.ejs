@@ -1,0 +1,17 @@
+<header>
+	<a id="logo" href="/" title="<%=config.title%>">
+	<img src="<%=theme.favicon%>" alt="<%=config.title%>"></a>
+	
+	<%if(theme.search.enable){%>
+		<!--搜索栏-->
+		<%- partial('search')%>
+	<%}%>
+
+	<%console.log(theme.sidebar.enable)%>
+
+	<%if(theme.sidebar.enable){%>
+		<!--侧边导航栏-->
+		<%- partial('sidebar')%>
+	<%}%>
+
+</header>

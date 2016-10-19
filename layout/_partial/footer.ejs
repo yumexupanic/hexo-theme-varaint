@@ -1,0 +1,21 @@
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		<span>Yumemor© 版权所有</span>
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<%- js('http://lib.sinaapp.com/js/jquery/2.0/jquery.min') %>-->
+	<%- js('js/lib') %>
+	<%- js('js/google-code-prettify/prettify') %>
+	<%- js('js/module') %>
+	<%- js('js/script') %>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>

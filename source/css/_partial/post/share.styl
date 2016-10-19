@@ -1,0 +1,84 @@
+
+/*移动端优化*/
+
+#social-share {
+    width: 50px;
+    float: right;
+    cursor: pointer
+}
+
+#social-share i {
+    margin-right: 5px
+}
+
+#social ul {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background-color: #FAFAFA
+}
+
+#social ul li i {
+    font-size: 25px;
+    line-height: 63px;
+    text-align: center;
+    color: #888;
+    cursor: pointer
+}
+
+#social ul li {
+    display: inline-table;
+    width: 70px
+}
+
+a[data-tooltip] {
+    position: relative
+}
+
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+    position: absolute;
+    display: none;
+    opacity: 0.85
+}
+
+a[data-tooltip]::before {
+    content: attr(data-tooltip);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-decoration: none
+}
+
+a[data-tooltip]::after {
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    content: ''
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+    display: block
+}
+
+a[data-tooltip][data-placement="top"]::before {
+    bottom: 100%;
+    left: -16px;
+    margin-bottom: 16px
+}
+
+a[data-tooltip][data-placement="top"]::after {
+    border-top-color: rgba(0, 0, 0, 0.8);
+    border-bottom: none;
+    bottom: 100%;
+    left: 7px;
+    margin-bottom: 10px
+}
+
+
+

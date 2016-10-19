@@ -1,0 +1,48 @@
+
+
+# site icon
+favicon: /favicon.png
+
+# search
+search: 
+    enable: true
+    placeholder: Enter Key...
+
+# nav
+sidebar: 
+  enable: true
+  menus:
+      - item: 
+        name: 知乎
+        link: http://zhihu.com
+        target: _blank
+      - item:
+        name: 知乎2
+        link: http://zhihu.com
+
+# comments
+comments:
+  duoshuo_username:  yumemor
+  #disqus_username: yumemor
+
+# accounts
+accounts:
+  - item:
+    name: zhihu
+    link: https://www.zhihu.com/people/yumemor
+  - item:
+    name: github
+    link: https://github.com/yumemor
+  - item:
+    name: twitter
+    link: https://github.com/yumemor
+  - item:
+    name: douban
+    link: https://github.com/yumemor
+
+
+
+
+
+
+

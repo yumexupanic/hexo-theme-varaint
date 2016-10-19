@@ -1,0 +1,47 @@
+
+<!--文章列表-->
+<div class="wrapper">
+  <% if(index){ %>
+    <ul class="posts-list mb+ js-posts">
+      <% page.posts.each(function(post,i){ %>
+                <!--<div class="type">
+          <div class="mask">
+            <i class="iconfont"></i>
+          </div>
+          </div>-->
+        <li class="post">
+          <%if(!i){%>
+            <i class="post-status iconfont icon-icon"></i>  
+          <%}%>
+          <h2 class="no-background"  >
+            <span><a href="<%- url_for(post.path) %>"><%= post.title %></a></span>
+            <%- partial('_widget/date',{post: post,class_name: 'post-time',date_format: null}) %>
+          </h2>
+        </li>
+      <% }) %>
+    </ul>
+    <% if (page.total > 1){ %>
+      <div class="pagination mb+ js-pagination">
+        <div class="js-next pagination__load">
+            <%- paging() %>
+        </div>
+    </div>
+
+    <% } %>
+
+  <%} else {%>
+    <%- partial('article',{post:post}) %>
+  <%}%>
+</div>
+
+<% if(!index){ %>
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  <%- partial('post/share',{post: post})%>
+  <div class="wrapper"></div>
+<%}%>
+
+
+

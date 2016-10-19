@@ -1,0 +1,75 @@
+
+@import "_var"
+@import "_font"
+
+*
+    margin: 0
+    padding: 0
+
+html,body
+    height: 100%
+    width: 100%
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+html
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+
+body
+    font-family: font-mono
+    font-size: font-size
+    background-color: #fff
+
+
+
+h1, h2, h3, h4, h5, h6
+    color: #666;
+    font-weight: 300;
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote, p, address, table, fieldset, figure, pre
+    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
+
+
+ol,li
+    list-style: none
+
+a
+    color: #666666
+    text-decoration: none
+
+abbr[title],dfn[title] 
+    cursor: help
+
+u,ins
+    text-decoration: none
+
+ins
+    border-bottom: 1px solid
+
+
+@import "_partial/header"
+@import "_partial/banner"
+@import "_partial/search"
+@import "_partial/sidebar"
+
+@import "_partial/archive"
+@import "_partial/article"
+@import "_partial/post/share"
+
+@import "_partial/author"
+@import "_partial/footer"

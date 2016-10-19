@@ -1,0 +1,19 @@
+<div id="social">
+	<ul>
+		
+		<li>
+			<a href="http://service.weibo.com/share/share.php?title=<%=post.title%>&amp;url=<%=config.url+url_for(post.path)%>" data-tooltip="weibo" data-placement="top" target="_blank"><i class="iconfont icon-weibo"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a href="http://www.douban.com/recommend/?title=<%=post.title%>&amp;url=<%=config.url+url_for(post.path)%>" data-tooltip="douban" data-placement="top" target="_blank"><i class="iconfont icon-douban"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a href="http://twitter.com/share?title=<%=post.title%>&amp;url=<%=config.url+url_for(post.path)%>" data-tooltip="twitter" data-placement="top" target="_blank"><i class="iconfont icon-twitter"></i>
+			</a>
+		</li>
+	</ul>
+</div>

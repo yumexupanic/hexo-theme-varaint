@@ -1,0 +1,15 @@
+<a id="nav-toggle" href="#"><span></span></a>
+
+<nav>
+	<div class="menu-top-container">
+		<ul id="menu-top" class="menu">
+			<%for(var i = 0 ; i < theme.sidebar.menus.length ; i++){%>
+				<% var item = theme.sidebar.menus[i]%>
+				<li class="current-menu-item">
+					<a href="<%=item.link%>" target="<%=item.target ? item.target : ''%>"><%=item.name%></a>
+				</li>
+			<%}%>
+		</ul>
+		
+	</div>
+</nav>

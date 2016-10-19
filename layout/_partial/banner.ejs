@@ -1,0 +1,11 @@
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	<%if(post.banner){%>
+		<figure class="top-image" style='background-image: url(<%=post.banner%>)' data-enable=false></figure>
+	<%} else {%>
+		<figure class="top-image" data-enable=true></figure>
+	<%}%>
+</div>
