@@ -1,6 +1,6 @@
 # 又一个 Hexo 主题 hexo-theme-varaint
 
-预览地址：yumemor.github.io/hexo-theme-varaint
+预览地址：http://yumemor.github.io/hexo-theme-varaint
 
 先感谢[原作者](www.dahuzi.me)，这个主题是我无意逛 wordpress 看见的 感觉很简洁。在争取到作者的同意下 开始了移植工作。
 
