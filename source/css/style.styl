@@ -61,11 +61,14 @@ u,ins
 ins
     border-bottom: 1px solid
 
-
 @import "_partial/header"
 @import "_partial/banner"
-@import "_partial/search"
-@import "_partial/sidebar"
+
+if search
+    @import "_partial/search"
+
+if sidebar
+    @import "_partial/sidebar"
 
 @import "_partial/archive"
 @import "_partial/article"

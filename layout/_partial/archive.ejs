@@ -26,7 +26,6 @@
             <%- paging() %>
         </div>
     </div>
-
     <% } %>
 
   <%} else {%>
@@ -39,8 +38,17 @@
     <path d="M0 0 L50 100 L100 0 Z"></path>
   </svg>
 
-  <%- partial('post/share',{post: post})%>
+  <%if(post.share){%>
+    <%- partial('post/share', {
+      key: post.slug,
+      title: post.title,
+      url: config.url+url_for(post.path)
+    })%>
+  <%}%>
+
+
   <div class="wrapper"></div>
+
 <%}%>
 
 

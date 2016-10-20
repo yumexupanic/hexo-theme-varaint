@@ -3,44 +3,46 @@
 # site icon
 favicon: /favicon.png
 
+# author headimg
+headimg: http://oct8d1mqf.bkt.clouddn.com/2016-10-17-15%3A42%3A28.jpg
+
 # search
 search: 
     enable: true
     placeholder: Enter Key...
 
-# nav
+# sidebar
 sidebar: 
   enable: true
   menus:
-      - item: 
-        name: 知乎
-        link: http://zhihu.com
-        target: _blank
-      - item:
-        name: 知乎2
-        link: http://zhihu.com
+    -
+      name: Weibo
+      link: http://weibo.com/yumemor/
+      target: _blank
 
 # comments
 comments:
   duoshuo_username:  yumemor
   #disqus_username: yumemor
 
-# accounts
-accounts:
-  - item:
-    name: zhihu
-    link: https://www.zhihu.com/people/yumemor
-  - item:
+# accounts support weibo/github/zhihu/twitter/douban 
+# display to former three
+social: 
+  -
+    name: weibo
+    link: http://weibo.com/yumemor/
+  -
     name: github
     link: https://github.com/yumemor
-  - item:
-    name: twitter
-    link: https://github.com/yumemor
-  - item:
-    name: douban
-    link: https://github.com/yumemor
-
-
+  -
+    name: zhihu
+    link: https://www.zhihu.com/people/yumemor
+#  -
+#    name: twitter
+#    link: 
+#  -
+#    name: douban
+#    link: 
 
 
 

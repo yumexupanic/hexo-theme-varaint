@@ -3,32 +3,34 @@
 		<div class="layout layout--center">
 			<div class="layout__item palm-mb">
 				<div class="media">
-					<img class="headimg" src="http://oct8d1mqf.bkt.clouddn.com/2016-10-17-3E18EA20B36FB90CEEF446E04A5F1302%281%29.png" alt=''>
+					<img class="headimg" src='<%=theme.headimg%>' alt='<%=config.author%>'>
 					<div class="media__body">
 						<h4><%=config.title%></h4>
 						<p class='site-description'><%=config.description%></p>
 					</div>
 				</div>
-			</div>
-			<div class="author-contact">
-				<ul>
-					<%for(var i = 0 ; i < theme.accounts.length ; i++){%>
-						<%var item = theme.accounts[i]%>
-						<li>
-			        		<a href="<%=item.link%>" target="_blank">
-			        			<%if(item.name == 'zhihu'){%>
-									<i class="iconfont icon-zhihu"></i>
-			        			<%} else if(item.name == 'github') {%>
-			        				<i class="iconfont icon-github"></i>
-			        			<%} else if(item.name == 'douban') {%>
-			        				<i class="iconfont icon-douban"></i>
-			        			<%} else if(item.name == 'twitter') {%>
-			        				<i class="iconfont icon-twitter"></i>
-			        			<%}%>
-			        		</a>
-			        	</li>
-					<%}%>
-				</ul>
+				<div class="author-contact">
+					<ul>
+						<%for(var i = 0 ; i < (theme.social.length > 3 ? 3 : theme.social.length) ; i++){%>
+							<%var item = theme.social[i]%>
+							<li>
+				        		<a href="<%=item.link%>" target="_blank">
+				        			<%if(item.name == 'weibo'){%>
+				        				<i class="iconfont icon-weibo"></i>
+				        			<%} else if(item.name == 'zhihu'){%>
+										<i class="iconfont icon-zhihu"></i>
+				        			<%} else if(item.name == 'github') {%>
+				        				<i class="iconfont icon-github"></i>
+				        			<%} else if(item.name == 'douban') {%>
+				        				<i class="iconfont icon-douban"></i>
+				        			<%} else if(item.name == 'twitter') {%>
+				        				<i class="iconfont icon-twitter"></i>
+				        			<%}%>
+				        		</a>
+				        	</li>
+						<%}%>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
