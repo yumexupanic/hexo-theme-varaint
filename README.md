@@ -102,6 +102,11 @@ highlight:
 <%- css('js/google-code-prettify/download.css') %>
 ```
 
+> 如果不关闭 Hexo 默认的 highlight,就会出现下面这种情况
+
+![图1](http://oct8d1mqf.bkt.clouddn.com/2016-11-10-09%3A13%3A21.jpg)
+
+
 #巴啦啦啦
 
 项目目前没有 page 页面，只有 post 文章页 ，由于原主题没有 category 和 tag 页面 我也在考虑这两个页面到底是加还是不加。
