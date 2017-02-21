@@ -38,6 +38,12 @@ search:
     placeholder: Enter Key...
 ```
 
+## count(网站统计)
+```yaml
+count: 
+    enable: true #是否启用
+```
+
 ## comments
 
 ```yaml
