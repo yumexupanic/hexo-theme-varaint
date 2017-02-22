@@ -39,6 +39,15 @@ search:
 ```
 
 ## count(网站统计)
+
+统计功能使用[不蒜子](http://service.ibruce.info/)，目前最大的弊端就是官方服务网站不开放注册，所以对于运行了一段时间的网站，不蒜子的数据都是从1开始，没办法设置，只有等后期开放注册之后，登入网站才能对统计计数进行设置。
+js代码位置在你的themes/your themes/layout/_partial/footer.ejs底部
+
+```html
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+```
+_config.yml配置项
+
 ```yaml
 count: 
     enable: true #是否启用
