@@ -5,6 +5,9 @@
 		<%- post.content %>
 	</div>
 	<div class="meta split">
+		<%if(theme.count.enable){%>
+			<span>本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</span>
+		<%}%>
 		<%- partial('_widget/date',{post: post,class_name: 'post-date',date_format: null})%>
 	</div>
 </article>

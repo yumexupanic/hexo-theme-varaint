@@ -20,6 +20,10 @@ sidebar:
       link: http://weibo.com/yumemor/
       target: _blank
 
+# count(统计)
+count:
+  enable: true
+
 # comments
 comments:
   duoshuo_username:  yumemor
