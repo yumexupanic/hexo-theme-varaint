@@ -23,7 +23,13 @@
     <% if (page.total > 1){ %>
       <div class="pagination mb+ js-pagination">
         <div class="js-next pagination__load">
-            <%- paging() %>
+            <%- paginator({
+            prev_text: "&laquo; Prev",
+            next_text: "Next &raquo;",
+            mid_size: "1",
+            end_size: "1",
+            space: "..."
+          }) %>
         </div>
     </div>
     <% } %>
