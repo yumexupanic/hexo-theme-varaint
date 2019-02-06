@@ -4,9 +4,9 @@
 favicon: /favicon.png
 
 # author headimg
-headimg: http://oct8d1mqf.bkt.clouddn.com/2016-10-17-15%3A42%3A28.jpg
+headimg: https://imgchr.github.la/steve.jpeg
 # author info
-name: Yumemor
+name: justpsvm
 description: Stay Hungry,Stay Foolish.
 
 # search
@@ -20,7 +20,7 @@ sidebar:
   menus:
     -
       name: Weibo
-      link: http://weibo.com/yumemor/
+      link: http://weibo.com/
       target: _blank
 
 # count(统计)
@@ -29,21 +29,21 @@ count:
 
 # comments
 comments:
-  duoshuo_username:  yumemor
-  #disqus_username: yumemor
+  duoshuo_username:  justpsvm
+  #disqus_username: justpsvm
 
 # accounts support weibo/github/zhihu/twitter/douban 
 # display to former three
 social: 
   -
     name: weibo
-    link: http://weibo.com/yumemor/
+    link: http://weibo.com/
   -
     name: github
-    link: https://github.com/yumemor
+    link: https://github.com/
   -
     name: zhihu
-    link: https://www.zhihu.com/people/yumemor
+    link: https://www.zhihu.com/
 #  -
 #    name: twitter
 #    link: 
