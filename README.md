@@ -117,9 +117,8 @@ highlight:
 <%- css('js/google-code-prettify/download.css') %>
 ```
 
-> 如果不关闭 Hexo 默认的 highlight,就会出现下面这种情况
+> 如果不关闭 Hexo 默认的 highlight 代码风格会混乱。
 
-![图1](http://oct8d1mqf.bkt.clouddn.com/2016-11-10-09%3A13%3A21.jpg)
 
 
 #巴啦啦啦
