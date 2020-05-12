@@ -15,7 +15,7 @@ var bannerNode = $('.top-image');
        var index = parseInt((Math.random() * 4) + 1);
        bannerNode.attr('style','background-image:url(/banner/'+index+'.jpg)');
    }
-``` 
+```
 
 进行更改。
 
@@ -57,11 +57,13 @@ count:
 
 ```yaml
 comments:
-  duoshuo_username:  justpsvm
+  #livere_uid:  填写来比力UID
   #disqus_username: justpsvm
 ```
 
 > 在国内的话还是建议大家使用多说，disqus 必须要翻墙。
+>
+> 多说已经下线换成来比力，注册来比力代码中找到livere_uid填上去即可,效果看我的[博客](https://www.plasf.cn)
 
 ## sidebar
 
